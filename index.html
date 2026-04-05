@@ -42,7 +42,7 @@
             <!-- ── CARD 1 — FILME ── -->
             <article class="card" data-categoria="filme" aria-label="Batman: O Cavaleiro das Trevas">
                 <img
-                    src="batman.jpg"
+                    src="https://raw.githubusercontent.com/rhuan-fogaca/Site-final-Front-End/main/batman.jpg"
                     alt="Pôster do filme Batman: O Cavaleiro das Trevas"
                     class="card-img"
                     loading="lazy"
@@ -64,7 +64,7 @@
             <!-- ── CARD 2 — FILME ── -->
             <article class="card" data-categoria="filme" aria-label="Invocação do Mal">
                 <img
-                    src="conjuring.jpg"
+                    src="https://raw.githubusercontent.com/rhuan-fogaca/Site-final-Front-End/main/conjuring.jpg"
                     alt="Pôster do filme Invocação do Mal"
                     class="card-img"
                     loading="lazy"
@@ -86,7 +86,7 @@
             <!-- ── CARD 3 — SÉRIE ── -->
             <article class="card" data-categoria="serie" aria-label="My Little Pony">
                 <img
-                    src="mlp.jpg"
+                    src="https://raw.githubusercontent.com/rhuan-fogaca/Site-final-Front-End/main/mlp.jpg"
                     alt="Pôster do seriado My Little Pony: A Amizade é Mágica"
                     class="card-img"
                     loading="lazy"
@@ -108,7 +108,7 @@
             <!-- ── CARD 4 — SÉRIE ── -->
             <article class="card" data-categoria="serie" aria-label="The Walking Dead">
                 <img
-                    src="walkingdead.jpg"
+                    src="https://raw.githubusercontent.com/rhuan-fogaca/Site-final-Front-End/main/walkingdead.jpg"
                     alt="Pôster da série The Walking Dead"
                     class="card-img"
                     loading="lazy"
@@ -129,7 +129,7 @@
             <!-- ── CARD 5 — SÉRIE ── -->
             <article class="card" data-categoria="serie" aria-label="Peaky Blinders">
                 <img
-                    src="peaky.jpg"
+                    src="https://raw.githubusercontent.com/rhuan-fogaca/Site-final-Front-End/main/peaky.jpg"
                     alt="Pôster da série Peaky Blinders: Sangue, Apostas e Navalhas"
                     class="card-img"
                     loading="lazy"
@@ -156,4 +156,55 @@
                 <div class="campo-grupo">
                     <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
                     <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" aria-required="true" aria-describedby="erroNome">
-                    <span id="erroNome" class="erro-msg" role="alert" aria-live="polite"></span
+                    <span id="erroNome" class="erro-msg" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="campo-grupo">
+                    <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" aria-required="true" aria-describedby="erroEmail">
+                    <span id="erroEmail" class="erro-msg" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="campo-grupo">
+                    <label for="assunto">Assunto <span aria-hidden="true">*</span></label>
+                    <select id="assunto" name="assunto" aria-required="true" aria-describedby="erroAssunto">
+                        <option value="">Selecione um assunto...</option>
+                        <option value="sugestao">Sugestão de título</option>
+                        <option value="problema">Reportar problema</option>
+                        <option value="duvida">Dúvida geral</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <span id="erroAssunto" class="erro-msg" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." aria-required="true" aria-describedby="erroMensagem"></textarea>
+                    <span id="erroMensagem" class="erro-msg" role="alert" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                <p id="sucessoContato" class="sucesso-msg" hidden aria-live="polite">
+                    ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p class="contact">
+            Contato:
+            <a href="tel:+5541997895660" aria-label="Ligar para (41) 99789-5660">(41) 99789-5660</a>
+            |
+            <a href="mailto:rhuanfmeurer@gmail.com" aria-label="Enviar e-mail para rhuanfmeurer@gmail.com">rhuanfmeurer@gmail.com</a>
+        </p>
+        <nav class="footer-links" aria-label="Links do rodapé">
+            <a href="#">Privacidade</a>
+            <a href="https://github.com/rhuan-fogaca" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#">Instagram</a>
+        </nav>
+        <p class="footer-copy">&copy; 2025 Netflix Clone — Trabalho Acadêmico</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
